@@ -1,0 +1,37 @@
+//Reverse an array//
+#include<iostream>
+using namespace std;
+
+void R(int A[],int n)
+{
+int s=0,e=n-1;
+while(s<=e)
+{
+swap (A[s],A[e]);
+s++;
+e--;
+}
+}
+
+void P(int A[],int n)
+{
+for(int i=0;i<n;i++)
+{
+cout<<A[i];
+}
+cout<<endl;
+}
+
+int main()
+{
+int A[6]={1,2,3,4,5,6};
+int B[5]={1,2,3,4,5};
+R(A,6);
+R(B,5);
+P(A,6);
+P(B,5);
+}
+
+/*output = 
+654321
+54321*/
